@@ -1,10 +1,10 @@
 # LINUX初学  
-## 001  
+## 001 不要再用老方法学习单片机和ARM  
 ***  
 ![单片机程序的学习方法001_为何要学习](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/%E5%8D%95%E7%89%87%E6%9C%BA%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95001_%E4%B8%BA%E4%BD%95%E8%A6%81%E5%AD%A6%E4%B9%A0.jpg)
 ![单片机程序的学习方法002_怎样学习](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/%E5%8D%95%E7%89%87%E6%9C%BA%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95002_%E6%80%8E%E6%A0%B7%E5%AD%A6%E4%B9%A0.jpg)
 
-## 002
+## 002 ubuntu环境搭建和ubuntu图形界面操作
 ***
 1.新建并编辑文本文件  
   
@@ -29,7 +29,7 @@
 8.网络看视频   
 ![安装虚拟机](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA.png)
 
-## 003
+## 003 linux入门命令
 ***
 问题:  
 除了图形界面，ubuntu下面有没有其他方式也可以创建目录、创建文件？  
@@ -264,7 +264,7 @@ ls 常用选项为-l、-a、-h
 3. --help   
 如ls --help   
 
-## 004
+## 004 vi编辑器
 ***
 vi编辑器的使用  
  
@@ -406,7 +406,7 @@ vi编辑器有三种模式
 
 7）保存并退出。  
 
-## 004
+## 005 linux进阶命令
 ***
 find   
 目的:查找符合条件的文件   
@@ -603,4 +603,6 @@ tar  -czvf与tar  czvf是一样的效果，所以说，后面统一取消-。
 	tar $~~~~~$ xjvf $~~~~~$ 压缩文件名 $~~~~~$ -C $~~~~~$ 指定目录    
 	如：tar xjvf dira.tar.bz2   解压到当前目录     
 	如：tar xjvf dira.tar.bz2 -C /home/book     解压到/home/book      
+## 006 JZ2440开发板熟悉与体验
+***   
 
