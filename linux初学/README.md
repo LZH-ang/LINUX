@@ -606,3 +606,45 @@ tar  -czvf与tar  czvf是一样的效果，所以说，后面统一取消-。
 ## 006 JZ2440开发板熟悉与体验
 ***   
 
+第001节_开发板接口介绍与串口连接  
+![开发板接口及连线](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/%E5%BC%80%E5%8F%91%E6%9D%BF%E6%8E%A5%E5%8F%A3%E5%8F%8A%E8%BF%9E%E7%BA%BF.jpg)   
+第002节_使用eop烧写裸板程序   
+  
+第003节_eop常见问题   
+1. 未连接op/eop到电脑   
+2. 有其他程序在使用op/eop (同一时间只能有一个程序使用它)   
+3. jtag线未接   
+4. 开发板未上电   
+5. oflash xxx.bin 时当前目录下没有xxx.bin   
+6. 烧写完后没有正确设置启动开关   
+7. 烧写完后，op/eop-----开发板之间的排线未断开, 导致程序无法运行   
+  
+第004节_使用uboot烧写裸板程序  
+1. 使用op/eop把u-boot.bin烧到nor flash   
+2. 开发板设置为nor启动, 上电后马上在串口输入空格键，使板子进入UBOOT而不是启动板子上的内核   
+3. 连接PC-----------开发板的usb device口; 安装驱动   
+4. 在UBOOT的串口菜单中输入n (表示接收USB文件并烧写到NAND)   
+5. 使用dnw_100ask.exe发送bin文件  
+6. uboot即会自动接收、烧写bin文件   
+7. 断电、设为NAND启动、上电：运行nand上烧好的程序   
+   
+第005节_恢复出厂系统   
+1. 使用op/eop烧写u-boot到nor/nand, 设置为nor/nand启动   
+2. 上电后马上在串口输入空格键，使板子进入UBOOT而不是启动板子上的内核   
+3. 连接PC-----------开发板的usb device口; 安装驱动   
+4. 下载内核: 在UBOOT的串口菜单中输入k   
+5. 使用dnw_100ask.exe发送uImage文件   
+6. uboot即会自动接收、烧写uImage文件   
+7. 下载文件系统: 在UBOOT的串口菜单中输入y   
+8. 使用dnw_100ask.exe发送 fs_qtopia.yaffs2 文件   
+9. uboot即会自动接收、烧写根文件系统   
+10. 输入q退出UBOOT串口菜单, 执行命令删除参数分区: nand erase params   
+11. 重启(对于QT文件系统，第一次重启时会要求你较准触摸屏)    
+(如果触摸不准，可以等系统启动后在串口执行：rm /etc/pointercal 然后重启再次较准)   
+  
+**JLink下载方法：[如何烧写S3C2440裸板程序](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/%E5%A6%82%E4%BD%95%E7%83%A7%E5%86%99S3C2440%E8%A3%B8%E6%9D%BF%E7%A8%8B%E5%BA%8F.pdf)**
+  
+第006节_一句话解决嵌入式开发ping问题  
+![一句话解决嵌入式开发ping问题](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/%E4%B8%80%E5%8F%A5%E8%AF%9D%E8%A7%A3%E5%86%B3ping%E9%97%AE%E9%A2%98.jpg)
+
+
