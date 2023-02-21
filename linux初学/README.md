@@ -748,3 +748,17 @@ go forward(alt + .)回到下一次光标所在位置，或者使用工具栏中�
 作业:   
 修改led_on.S点亮LED2   
 直接修改led_on.bin点亮LED2   
+    
+5. 辅线2_编程知识_进制   
+![编程知识_进制](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/003_%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86_%E8%BF%9B%E5%88%B6.jpg)
+6. 辅线2_编程知识_字节序_位操作    
+作业: 编写C APP判断当前CPU的字节序  
+见008work/endian.c
+![编程知识_节序_位操作](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/004_%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86_%E8%8A%82%E5%BA%8F_%E4%BD%8D%E6%93%8D%E4%BD%9C.jpg)
+7. 编写C程序控制LED    
+a. 我们写出了main函数, 谁来调用它?    
+b. main函数中变量保存在内存中, 这个内存地址是多少?    
+答: 我们还需要写一个汇编代码, 给main函数设置内存, 调用main函数    
+![编写C程序控制LED](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/005_%E7%BC%96%E5%86%99C%E7%A8%8B%E5%BA%8F%E6%8E%A7%E5%88%B6LED.jpg)
+8. 几条汇编指令_bl_add_sub_ldm_stm 图002   
+   
