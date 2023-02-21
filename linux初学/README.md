@@ -761,4 +761,10 @@ b. main函数中变量保存在内存中, 这个内存地址是多少?
 答: 我们还需要写一个汇编代码, 给main函数设置内存, 调用main函数    
 ![编写C程序控制LED](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/005_%E7%BC%96%E5%86%99C%E7%A8%8B%E5%BA%8F%E6%8E%A7%E5%88%B6LED.jpg)
 8. 几条汇编指令_bl_add_sub_ldm_stm 图002   
+9. 解析C程序的内部机制   
+作业：使用汇编指令，给C函数传多个参数，分析反汇编码理解传参过程    
+![解析C程序的内部机制](https://github.com/LZH-ang/LINUX/blob/main/linux%E5%88%9D%E5%AD%A6/006_%E8%A7%A3%E6%9E%90C%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%86%85%E9%83%A8%E6%9C%BA%E5%88%B6.jpg)
+10. 完善LED程序_编写按键程序    
+作业：使用按键S5控制所有LED(按下S5所有LED都亮)    
+##### 008程序在008work文件   
    
